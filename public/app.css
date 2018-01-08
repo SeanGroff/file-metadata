@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.File__container {
+  background-color: dodgerblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.File__heading {
+  text-transform: capitalize;
+}
+
+.File__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.File__fieldset {
+  border-color: white;
+}
+
+.File__button {
+  background-color: dodgerblue;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 15px 90px;
+  position: relative;
+}
+
+.File__button:hover {
+  background-color: white;
+  border-color: dodgerblue;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.File__button:active {
+  top: 4px;
+  left: 1px;
+}
+
+.File__button--submit {
+  margin: 40px 0;
+}
