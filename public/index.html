@@ -9,12 +9,12 @@
 <body>
   <div class="File__container">
     <h1 class="File__heading">Submit a file to view its filesize</h1>
-    <form class="File__form" action="">
-      <fieldset class="File__fieldset">
-        <button class="File__button">browse...</button>
-        <span>no file selected</span>
+    <form class="File__form" action="/upload" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Choose a file to upload</legend>
+        <input type="file" name="userFile" value="browse..."/>
       </fieldset>
-      <button class="File__button File__button--submit" type="submit">submit</button>
+      <input type="submit" name="submitFile" value="submit" class="File__button File__button--submit" />
     </form>
   </div>
 </body>
